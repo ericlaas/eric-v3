@@ -323,3 +323,39 @@ html.in-tale .nav__bag, html.in-tale .nav .nav__menu { background: #202F30; bord
   body.buy-page:not(.shop-page) .lgn-sec { display: block; }
   body.buy-page:not(.shop-page) .lgn-sec .lgn { margin-left: auto; margin-right: auto; }
 }
+
+/* ── 14. The last titles that stood in a left column (Eric, 11 Nov: "ja, alla"): Details and Under the hood on the
+   buy page, the cart and the FAQ. Each title is on top and centred now, the content under it. Phones are as they were ── */
+@media (min-width: 1101px), (min-width: 761px) and (min-aspect-ratio: 1/1) {
+  /* Details: the title across the top, the photo on the left and the numbers on the right under it */
+  body.buy-page:not(.shop-page) .details--v2 { grid-template-rows: repeat(7, auto) 1fr; }
+  body.buy-page:not(.shop-page) .details--v2 h2.details__h { grid-column: 1 / -1; grid-row: 1; margin: 0 0 clamp(28px, 3vw, 44px); text-align: center; }
+  body.buy-page:not(.shop-page) .details--v2 .details__photo { grid-row: 2 / -1; margin-top: 0; }
+  body.buy-page:not(.shop-page) .details--v2 .dnum { grid-row: 2; }
+  /* Under the hood: the title and its line centred, the cards in one centred column under them */
+  body.buy-page:not(.shop-page) .hood { display: block; }
+  body.buy-page:not(.shop-page) .hood .details__text { display: block; }
+  body.buy-page:not(.shop-page) .hood .details__text > * { max-width: 1000px; margin-left: auto; margin-right: auto; }
+  body.buy-page:not(.shop-page) .hood h2.details__h { margin: 0 auto; text-align: center; }
+  body.buy-page:not(.shop-page) .hood .hood__lead { max-width: 34em; margin: 18px auto clamp(28px, 3vw, 44px); text-align: center; text-wrap: balance; }
+  /* the cart: the title over the cart, one centred column */
+  body.cart-page:not(.oc-page) .cart__wrap { grid-template-columns: minmax(0, 1fr); max-width: 760px; margin: 0 auto; row-gap: 12px; }
+  body.cart-page:not(.oc-page) .cart__wrap > * { grid-column: 1; }
+  body.cart-page:not(.oc-page) .cart__wrap > .cart__h { grid-column: 1; grid-row: auto; position: static; justify-self: center; justify-content: center; margin: 0 0 clamp(16px, 2vw, 28px); text-align: center; }
+  html.is-empty body.cart-page:not(.oc-page) .cart__wrap { align-items: start; }
+}
+@media (min-width: 761px) {
+  /* the FAQ: the title, its line, the search and the popular questions centred; the drawing steps aside */
+  .faq-page .fq__top { max-width: 860px; margin: 0 auto clamp(28px, 3vw, 44px); text-align: center; position: static; }
+  body.faq-page .legal__wrap .fq__top > * { margin-left: auto !important; margin-right: auto !important; }
+  .faq-page .fq__top h1.cart__h { justify-content: center; text-align: center; }
+  .faq-page .fq__top .fq__art { display: none; }
+  .faq-page .fq__top .fq__search { max-width: 560px; }
+  .faq-page .pr .fq__top .fq__pop { justify-content: center; }
+  /* a portrait tablet: Details and Under the hood carry the same centred titles */
+  body.buy-page:not(.shop-page) :is(.details--v2, .hood) h2.details__h { text-align: center; }
+  body.buy-page:not(.shop-page) .hood .hood__lead { max-width: 34em; margin-left: auto; margin-right: auto; text-align: center; text-wrap: balance; }
+  /* the cart on a portrait tablet: the same centred title and column */
+  body.cart-page:not(.oc-page) .cart__wrap { max-width: 760px; margin: 0 auto; }
+  body.cart-page:not(.oc-page) .cart__wrap > .cart__h { justify-content: center; text-align: center; }
+}

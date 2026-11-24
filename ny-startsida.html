@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- FÖRHANDSVISNING (11 nov 2026): förslag på ny startsida. Inte live, inte länkad, inte indexerad. Endast engelska. -->
+<title>Smart bike lock with app, works with Apple Find My · LAAS</title>
+<meta name="description" content="Keyless smart bike lock for city bikes, e-bikes and cargo bikes. Unlock the LAAS Ring-Lock with your phone, lend it with a link. Works with Apple Find My.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#202F30">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-400-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/poppins-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="images/scenes/bike-lock-2400.webp" media="(min-width: 761px)">
+<link rel="preload" as="image" href="images/scenes/bike-lock-tall-900.webp" media="(max-width: 760px)">
+<link rel="stylesheet" href="ny-startsida.css?v=3">
+<script>
+  // ?cookies in the address asks the cookie question again, so the new row can be seen
+  if (/[?&]cookies/.test(location.search)) { try { localStorage.removeItem('laas-consent'); } catch (e) {} }
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a class="nav__logo" href="#top" aria-label="LAAS, home"><img class="white" src="images/logo-white.svg" alt="" width="109" height="28"><img class="ink" src="images/logo-ink.svg" alt="" width="109" height="28"></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="buy.html">Ring-Lock</a>
+      <a href="about.html">About LAAS</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://laaslocks.com/help/">Help &amp; Guides</a>
+    </nav>
+    <div class="nav__end">
+      <p class="lang" role="group" aria-label="Language"><a href="ny-startsida.html" aria-current="true" hreflang="en">EN</a><a href="da/" hreflang="da">DA</a></p>
+      <a class="nav__buy" href="#buy">Buy now <span>€129</span></a>
+      <button class="nav__menu" id="nm-open" type="button" aria-expanded="false" aria-controls="nm-menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16M4 15h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="menu" id="nm-menu" hidden>
+  <a href="#top">Home</a>
+  <a href="buy.html">Ring-Lock</a>
+  <a href="about.html">About LAAS</a>
+  <a href="faq.html">FAQ</a>
+  <a href="https://laaslocks.com/help/">Help &amp; Guides</a>
+  <p class="lang" role="group" aria-label="Language"><a href="ny-startsida.html" aria-current="true" hreflang="en">EN</a><a href="da/" hreflang="da">DA</a></p>
+</div>
+
+<main id="main">
+
+  <!-- 1 · one photo, what it is, one way to buy, and the two things that remove doubt. Find My story only: no Varefakta here. -->
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <picture class="hero__bg">
+      <source media="(max-width: 760px)" srcset="images/scenes/bike-lock-tall-900.webp">
+      <img src="images/scenes/bike-lock-2400.webp" alt="A black LAAS Ring-Lock on the rear wheel of a light blue city bike" width="2400" height="1354" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="wrap hero__body">
+      <div class="hero__copy">
+        <h1 id="h-hero">Too cool for keys</h1>
+        <p class="hero__sub">The keyless bike lock that works with Apple Find&nbsp;My</p>
+        <p class="hero__cta"><a class="btn btn--light btn--price" href="#buy">Buy now <span class="btn__price">€129</span></a><a class="textlink" href="#does">See how it works</a></p>
+        <p class="hero__fine"><span>In stock: delivered in 4–6 days</span><span>57-day trial: Fall in love or your money back</span></p>
+      </div>
+      <a class="hero__chip" href="#buy"><img src="images/lock/steel-00-800.webp" alt="The Ring-Lock in steel" width="76" height="76"><span><b>Ring-Lock</b><small>Steel, Copper or Black</small></span></a>
+    </div>
+    <div class="hero__rail"><ul class="wrap">
+      <li><a href="#does"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></svg><span><b>Unlock with your phone</b><span>Even without internet</span></span></a></li>
+      <li><a href="#does"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg><span><b>Find it with your phone</b><span>Works with Apple Find My</span></span></a></li>
+      <li><a href="#does"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span><b>Lend it with a link</b><span>No handover of keys</span></span></a></li>
+    </ul></div>
+  </section>
+
+  <!-- 2 · the three things the lock does, all visible at once (was: a four-frame carousel and the Lend chapter) -->
+  <section class="sec" id="does" aria-labelledby="h-does">
+    <div class="wrap does">
+      <h2 id="h-does">Less keys. More breeze.</h2>
+      <div class="does__grid">
+        <article class="does__card">
+          <div class="does__media"><video muted playsinline loop preload="none" poster="images/story/unlock-wide-poster.webp" data-src="images/story/unlock-wide.mp4?v=2" data-auto aria-label="She checks her phone, and the Ring-Lock on her rear wheel opens"></video></div>
+          <h3>Unlock with your phone</h3>
+          <p>Lock manually like any other bike lock. Unlock with the app, even without internet.</p>
+        </article>
+        <article class="does__card">
+          <div class="does__media"><img src="images/story/findmy-wide.webp?v=9" alt="On her iPhone, a map shows where her bike is" width="2000" height="1250" loading="lazy" decoding="async"></div>
+          <h3>Find it with your phone</h3>
+          <p>Forgot where you parked? See your bike on a map.</p>
+          <p class="wm">Works with Apple Find My</p>
+        </article>
+        <article class="does__card">
+          <div class="does__media"><video muted playsinline loop preload="none" poster="images/story/share-poster.webp?v=3" data-src="images/story/share.mp4?v=3" data-auto aria-label="A friend asks to borrow the bike, gets a link and unlocks it with her phone"></video></div>
+          <h3>Love it. Lend it.</h3>
+          <p>No more complex handover of keys. Just send a link. They can find and unlock your bike with their phone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · the proof, before the price. Lock story only: no Apple, no Find My here. -->
+  <section class="sec proof" id="insurance" aria-labelledby="h-proof">
+    <div class="wrap">
+      <div class="proof__top">
+        <div class="proof__copy">
+          <img class="proof__vf" src="images/varefakta-white.png" alt="Varefakta kontrolleret" width="480" height="556" loading="lazy">
+          <h2 id="h-proof">Insurance&#8209;approved in&nbsp;Denmark by&nbsp;Varefakta</h2>
+          <p>Don’t just take our word for it. Denmark’s independent consumer-labelling body, Varefakta, has given LAAS locks its seal of approval.</p>
+          <a class="textlink" href="https://varefakta.dk/cykellaase/#godkendte-cykellaase" target="_blank" rel="noopener">See VK 37868 on varefakta.dk</a>
+        </div>
+        <div class="proof__film" id="lab">
+          <video playsinline preload="none" poster="images/story/lab-test-poster.webp" data-src="images/story/lab-test.mp4" aria-label="Video from the actual lab test"></video>
+          <button class="proof__play" type="button" aria-label="Play the video from the lab test"><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg></i></button>
+          <span class="proof__cap">Video from the actual lab test</span>
+        </div>
+      </div>
+      <div class="proof__rev">
+        <q lang="en">It works well. […] The quality seems to be really good.</q>
+        <q lang="de">Klein unauffällig funktionell! Top Design und einfach in der Anwendung.</q>
+        <q lang="en">The app works fine. […] A good product.</q>
+        <a class="textlink" href="https://dk.trustpilot.com/review/laaslocks.com" target="_blank" rel="noopener">All reviews on Trustpilot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · will it fit: Marcus's words, unchanged -->
+  <section class="fit" id="fit" aria-labelledby="h-fit">
+    <picture><source media="(max-width: 760px)" srcset="images/hero/lock-900.webp"><img class="fit__bg" src="images/hero/lock-1920.webp" alt="A hand closes the LAAS Ring-Lock on a light blue city bike" width="1920" height="1200" loading="lazy" decoding="async"></picture>
+    <div class="wrap">
+      <div class="fit__copy">
+        <h2 id="h-fit">Will it fit<br>my&nbsp;bike?</h2>
+        <p>You bet. The Ring-Lock fits nearly every bike, from city bikes to e‑bikes and cargo bikes, with tyres up to 60 mm. The only bike it’s not suitable for is ‘fat bikes’.</p>
+        <p class="fit__fine">Don’t measure. 57-day trial: Fall in love or your money back</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · buy: what it is, which finish, what it costs, and the button puts it in the cart right here -->
+  <section class="sec" id="buy" aria-labelledby="h-buy">
+    <div class="wrap">
+      <div class="buy__box">
+        <div class="spin" id="spin" tabindex="0" role="group" aria-label="Turn the lock: drag, or use the arrow keys">
+          <img id="spin-img" src="images/spin/steel/1200/06.webp" alt="The LAAS Ring-Lock in steel, front view" width="1200" height="1200" loading="lazy" decoding="async" draggable="false">
+          <p class="spin__turn"><button type="button" data-turn="-1" aria-label="Turn left"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg></button><span aria-hidden="true">Drag to turn</span><button type="button" data-turn="1" aria-label="Turn right"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></button></p>
+        </div>
+        <div class="buy__info">
+          <h2 id="h-buy">Meet the Ring&#8209;Lock</h2>
+          <p class="buy__sub">Keyless ring lock in stainless steel.</p>
+          <div class="finishes" role="radiogroup" aria-label="Finish">
+            <button type="button" role="radio" data-finish="steel" aria-checked="true"><img src="images/scenes/thumb-steel.webp" alt="" width="40" height="40" loading="lazy">Steel</button>
+            <button type="button" role="radio" data-finish="copper" aria-checked="false"><img src="images/scenes/thumb-copper.webp" alt="" width="40" height="40" loading="lazy">Copper</button>
+            <button type="button" role="radio" data-finish="black" aria-checked="false"><img src="images/scenes/thumb-black.webp" alt="" width="40" height="40" loading="lazy">Black</button>
+          </div>
+          <p class="price"><strong>€129</strong><s>€149</s><small>from 1 Jan 2027</small></p>
+          <div class="buyrow">
+            <div class="qty"><button type="button" data-qty="-1" aria-label="Decrease quantity">−</button><span id="qty-value" aria-live="polite">1</span><button type="button" data-qty="1" aria-label="Increase quantity">+</button></div>
+            <button class="btn" id="buy-btn" type="button">Buy now</button>
+          </div>
+          <p class="buy__status" id="buy-status" role="status" aria-live="polite"></p>
+          <ul class="checks" aria-label="What you are covered by">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Insurance-approved in Denmark</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Shipping €9, free with two locks</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>In stock: delivered in 4–6 days</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>57-day trial: Fall in love or your money back</li>
+          </ul>
+          <dl class="spec">
+            <div><dt>Weight</dt><dd>504 g</dd></div>
+            <div><dt>Per charge</dt><dd>~6 months</dd></div>
+            <div><dt>Tyres up to</dt><dd>60 mm</dd></div>
+            <div><dt>Weather rating</dt><dd>IP55</dd></div>
+          </dl>
+          <p class="box"><b>In the box:</b> LAAS Ring-Lock, mounting screws, manual on the back of the box and insurance certificate.</p>
+          <ul class="paywall" aria-label="Accepted payment methods"><li><img src="images/icons/mobilepay-mark.svg" alt="MobilePay" width="41" height="26" loading="lazy"></li><li><img src="images/icons/applepay.svg" alt="Apple Pay" width="41" height="26" loading="lazy"></li><li><img src="images/icons/googlepay.svg" alt="Google Pay" width="41" height="26" loading="lazy"></li><li><img src="images/icons/klarna.svg" alt="Klarna" width="41" height="26" loading="lazy"></li><li><img src="images/icons/visa.svg" alt="Visa" width="41" height="26" loading="lazy"></li><li><img src="images/icons/mastercard.svg" alt="Mastercard" width="41" height="26" loading="lazy"></li></ul>
+          <p class="buy__links"><a class="textlink" href="buy.html#details">Every last detail</a><a class="textlink" href="promises.html#keep-moving">Keep You Moving warranty</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · set up: Marcus's words and his help films -->
+  <section class="sec how" id="how" aria-labelledby="h-how">
+    <div class="wrap how__in">
+      <div class="how__hd"><h2 id="h-how">Set up once.<br>Then just&nbsp;ride.</h2><p>No password. No email verification. No pet’s name required.</p></div>
+      <div class="how__grid">
+        <article><div class="how__media"><img src="images/how/serial-number.webp?v=4" alt="The LAAS app asks for the 8-digit serial number printed on the lock" width="540" height="760" loading="lazy" decoding="async"></div><h3>Set up your lock</h3><p>Enter the serial number. Give your lock a name. Done.</p></article>
+        <article><div class="how__media"><video muted playsinline loop preload="none" poster="images/how/lock-poster.webp?v=4" data-src="images/how/lock.mp4?v=4" data-auto aria-label="A hand closes the Ring-Lock"></video></div><h3>Lock manually like any other bike lock.</h3></article>
+        <article><div class="how__media"><video muted playsinline loop preload="none" poster="images/how/unlock-poster.webp?v=4" data-src="images/how/unlock.mp4?v=4" data-auto aria-label="A phone unlocks the Ring-Lock"></video></div><h3>Unlock with the app, even without internet.</h3></article>
+        <article><div class="how__media"><video muted playsinline loop preload="none" poster="images/how/charge-poster.webp?v=4" data-src="images/how/charge.mp4?v=4" data-auto aria-label="The Ring-Lock charging over USB-C"></video></div><h3>Charge twice a year</h3><p>A 90-minute charge over USB-C lasts about 6 months</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · six questions that stop a purchase. Questions and answers are the FAQ page's own, word for word. -->
+  <section class="sec" id="faq" aria-labelledby="h-faq">
+    <div class="wrap faq__in">
+      <div class="faq__hd"><h2 id="h-faq">Questions before you buy</h2><a class="textlink" href="faq.html">All questions and answers</a></div>
+      <div class="faq__rows">
+        <details name="faq"><summary>Which bikes does it fit?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></summary><div class="faq__a"><p>Most city, commuter, hybrid, electric, cargo and family bikes. It is not designed for fat bikes. Try it for 57 days; if it does not fit, send it back.</p></div></details>
+        <details name="faq"><summary>What if my bike has no mounting holes?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></summary><div class="faq__a"><p>Use Flex-Mount. It is an optional accessory for frames without ring-lock mounting holes.</p><img src="images/flexmount-install.webp" alt="Fitting the Flex-Mount on a frame without holes" loading="lazy" decoding="async"></div></details>
+        <details name="faq"><summary>How often does it need charging?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></summary><div class="faq__a"><p>Roughly every six months.</p></div></details>
+        <details name="faq"><summary>What if my phone is lost or replaced?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></summary><div class="faq__a"><ol><li><p><b>Signed in with Apple or Google?</b></p><p>Install the LAAS app on another phone. Sign in with the same account.</p></li><li><p><b>Another Owner has access?</b></p><p>Have them invite your new phone, or a phone you borrow.</p></li><li><p><b>Neither of those works? Contact Support.</b></p><p>If you’re the only Owner and weren’t signed in, we’ll verify you using information only you would know. There’s then a six-hour security delay before access is reset.</p><p>Call <a href="tel:+4531338213">+45 31 33 82 13</a> or write to <a href="mailto:support@laaslocks.com">support@laaslocks.com</a>.</p></li></ol></div></details>
+        <details name="faq"><summary>Does it work on Android?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></summary><div class="faq__a"><p>Yes. Use LAAS on Android to unlock and share your bike. The Android app is available on Google Play. Apple Find My requires an Apple device.</p></div></details>
+        <details name="faq"><summary>Can I try it before committing?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></summary><div class="faq__a"><p><b>57-day trial: Fall in love or your money back</b></p><p><a href="promises.html#trial">Full terms →</a></p></div></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 8 · the last screen is a way to buy; help for owners sits in the footer (was: a whole chapter) -->
+<footer class="end">
+  <div class="wrap">
+    <div class="end__cta">
+      <div>
+        <h2>Locks you can love.</h2>
+        <a class="btn btn--light btn--price" href="#buy">Buy now <span class="btn__price">€129</span></a>
+        <p class="end__fine">In stock: delivered in 4–6 days · 57-day trial: Fall in love or your money back</p>
+      </div>
+      <div class="end__locks" aria-hidden="true"><img src="images/lock/steel-01-800.webp" alt="" width="800" height="800" loading="lazy"><img src="images/lock/copper-01-800.webp" alt="" width="800" height="800" loading="lazy"><img src="images/lock/black-01-800.webp" alt="" width="800" height="800" loading="lazy"></div>
+    </div>
+    <div class="foot">
+      <div><img class="foot__logo" src="images/logo-white.svg" alt="LAAS" width="109" height="28" loading="lazy"><p>Meet LAAS. The keyless ring lock that is insurance&#8209;approved in Denmark.</p></div>
+      <div><h3>Help &amp; Guides</h3><ul>
+        <li>Call us <a href="tel:+4531338213"><b>+45 31 33 82 13</b></a></li>
+        <li>Write to us <a href="mailto:support@laaslocks.com"><b>support@laaslocks.com</b></a></li>
+        <li><a href="faq.html#everyday/4">My lock won’t open.</a></li>
+        <li><a href="faq.html#app/4">I lost my phone.</a></li>
+        <li><a href="faq.html#findmy/3">My bike is missing.</a></li>
+        <li><a href="https://laaslocks.com/guides/">Manual &amp; guides.</a></li>
+      </ul></div>
+      <div><h3>Shop</h3><ul>
+        <li><a href="buy.html">Ring-Lock</a></li>
+        <li><a href="shipping.html">Shipping</a></li>
+        <li><a href="shipping.html#returns">Returns</a></li>
+        <li><a href="promises.html#trial">57-day trial</a></li>
+        <li><a href="promises.html#keep-moving">Keep You Moving warranty</a></li>
+      </ul></div>
+      <div><h3>LAAS</h3><ul>
+        <li><a href="about.html">About LAAS</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://laaslocks.com/app/">Get the app</a></li>
+        <li><a href="https://www.instagram.com/laaslocks/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/laas" target="_blank" rel="noopener">Facebook</a></li>
+      </ul></div>
+    </div>
+    <p class="legal">Locks you can love. · © 2026 LAAS&nbsp;ApS · Designed in&nbsp;Copenhagen · Sankt Hans Gade 24E, st., 2200 København&nbsp;N · CVR&nbsp;40942491 · <a href="terms.html">Terms of sale</a> · <a href="privacy.html">Privacy</a><br>Apple, Find My, iPhone, iPad, iPadOS, Mac and macOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</p>
+  </div>
+</footer>
+
+<span class="preview-note">Förhandsvisning · inte live</span>
+
+<script src="cart-nav.js?v=1111utm"></script>
+<script src="consent.js"></script>
+<script src="ny-startsida.js?v=2"></script>
+</body>
+</html>
