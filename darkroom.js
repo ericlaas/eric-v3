@@ -400,7 +400,7 @@ const srcOf = (f, a, big) => a[0] === 'S'
   : `${(window.LAAS_ROOT || '')}images/lock/${f}-${a}-${res}.webp`;
 const cache = new Map();
 const fetchImg = src => cache.get(src) || (cache.set(src, new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(src); i.onerror = no; i.src = src; })), cache.get(src));
-let finish = 'steel', lockReady = false;
+let finish = 'black', lockReady = false; // the shop opens on black, it sells most (Eric 25 Nov)
 const intro = { t: -1 };
 const swap = { sweep: 0 };
 function show(f) {
@@ -413,7 +413,7 @@ function show(f) {
 // steel first: it is the bestseller and the one the page opens on
 {
   progress.glb = 1; // the lock only comes forward in the shop: the page no longer waits for it
-  const loadLock = () => fetchImg(srcOf('steel', '00')).then(() => { lockReady = true; spinFront('steel'); }, () => { lockEl.remove(); });
+  const loadLock = () => Promise.all(['steel', 'black'].map(f => fetchImg(srcOf(f, '00')))).then(() => { lockReady = true; spinFront('steel'); spinFront('black'); }, () => { lockEl.remove(); });
   if (location.hash === '#buy' || document.readyState === 'complete') loadLock();
   else addEventListener('load', () => (window.requestIdleCallback ? requestIdleCallback(loadLock, { timeout: 1500 }) : loadLock()), { once: true });
 }
