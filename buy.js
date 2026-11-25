@@ -35,7 +35,7 @@
   /* --------------------------------------------------------------- state */
   const q = new URLSearchParams(location.search);
   const wanted = (q.get('finish') || '').toLowerCase().replace('silver', 'steel');
-  let finish = NAME[wanted] ? wanted : 'black'; // black sells most (Eric 25 Nov)
+  let finish = NAME[wanted] ? wanted : 'steel';
   let qty = clamp(parseInt(q.get('qty'), 10) || 1, 1, 15);
 
   const still = $('#lock-still'), photo = $('#photo'), stage = $('#lock3d');
